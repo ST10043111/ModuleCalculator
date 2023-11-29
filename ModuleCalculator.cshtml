@@ -1,0 +1,110 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ModuleCalculator</title>
+
+    <style>
+        .form-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: goldenrod;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+        }
+
+        table th:nth-child(4), table td:nth-child(4) {
+            text-align: center;
+        }
+    </style>
+</head>
+<body bgcolor="Lavender">
+    <h2>ModuleCalculator</h2>
+    <div class="form-container">
+        <label for="moduleCode">ModuleCode:</label>
+
+        <input type="text" id="moduleCode" name="moduleCode" />
+        
+        
+            <input type="text" name="modulename" placeholder="ModuleName" /><br />
+
+            <input type="password" name="password" placeholder="Password" /><br />
+
+            <input type="submit" value="Login" />
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate">
+
+            <label for="weeks">No. of Weeks:</label>
+            <input type="number" id="weeks" name="weeks">
+
+            <label for="selfStudies">Self-Studies:</label>
+            <input type="number" id="selfStudies" name="selfStudies">
+
+            <button type="button" id="calculate">Calculate</button>
+
+
+    </div>
+
+    <h3>Result</h3>
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Module Code</th>
+                <th>Start Date</th>
+                <th>No. of weeks</th>
+                <th>Self-Studies</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        const calculateButton = document.getElementById('calculate');
+        const resultTableBody = document.getElementById('resultTable').getElementsByTagName('tbody')[0];
+
+        calculateButton.addEventListener('click', () => {
+            const moduleCode = document.getElementById('moduleCode').value;
+            const startDate = document.getElementById('startDate').value;
+            const weeks = document.getElementById('weeks').value;
+            const selfStudies = document.getElementById('selfStudies').value;
+
+            const newRow = resultTableBody.insertRow();
+            newRow.insertCell().innerText = moduleCode;
+            newRow.insertCell().innerText = startDate;
+            newRow.insertCell().innerText = weeks;
+            newRow.insertCell().innerText = selfStudies;
+        });
+
+
+    </script>
+</body>
+</html>

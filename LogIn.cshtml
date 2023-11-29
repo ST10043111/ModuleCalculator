@@ -1,0 +1,101 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+        }
+
+        .container {
+            width: 340px;
+            padding: 20px;
+            margin: 50px auto;
+            background-color: white;
+            box-shadow: 0px 0px 5px 0px gray;
+
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: gray;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+
+        }
+
+        .form-input:focus {
+            border-color: #6a79f7;
+            outline: none;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            background-color: #6a79f7;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+
+        }
+
+        .form-button:hover {
+            background-color: #5e6ece;
+        }
+
+        .create-account {
+            margin-top: 10px;
+            color: gray;
+            cursor: pointer;
+        }
+
+        .create-account:hover {
+            color: #6a79f7;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>LOGIN</h1>
+
+        <form id="LoginForm">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="username" class="form-input" required>
+
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" class="form-input" required>
+
+            <button style="background-color: cornflowerblue; border: none" class="form-button"><a href="~/ModuleCalculator.cshtml">LOGIN</a></button>
+            <br/>
+            <br/>
+            <button type="reset" class="form-button">CLEAR</button>
+
+        </form>
+
+        <p class="create-account">Don't Have an Account? <a href="/register">Create Account</a></p>
+    
+    </div>
+</body>
+</html>

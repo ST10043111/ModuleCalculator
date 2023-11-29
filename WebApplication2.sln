@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleCalculator Web", "WebApplication2\ModuleCalculator Web.csproj", "{7B4742EC-B377-4EA4-8A80-158F18A15968}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B4742EC-B377-4EA4-8A80-158F18A15968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4742EC-B377-4EA4-8A80-158F18A15968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4742EC-B377-4EA4-8A80-158F18A15968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4742EC-B377-4EA4-8A80-158F18A15968}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3951E66E-A05E-4599-A4DC-78629BFF3FE8}
+	EndGlobalSection
+EndGlobal
